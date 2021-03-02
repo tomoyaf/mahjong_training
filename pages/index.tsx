@@ -3,7 +3,7 @@ import Router from 'next/router';
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-import S from '../app/components/atoms/S';
+import Strong from '../app/components/atoms/strong';
 import Button from '../app/components/molecules/button';
 import PageTemplate from '../app/components/organisms/pageTemplate';
 import { leftBigWrapper } from '../styles/Icon.module.css';
@@ -25,7 +25,7 @@ export default function Home() {
           <p>
             MahjongLでは、対局相手の手牌を予測するための訓練を簡単に行うことができます。
             まずは以下のボタンから、
-            <S>3分で終わる簡単な練習問題を解いてみましょう</S>。
+            <Strong>3分で終わる簡単な練習問題を解いてみましょう</Strong>。
           </p>
         </div>
         <Button type="primary" size="big" onClick={handleClick}>
