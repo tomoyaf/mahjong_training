@@ -1,11 +1,40 @@
-import Head from 'next/head';
+import Router from 'next/router';
 
-import styles from '../styles/Home.module.css';
+import { faPlay } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+import S from '../app/components/atoms/S';
+import Button from '../app/components/molecules/button';
+import PageTemplate from '../app/components/organisms/pageTemplate';
+import { leftBigWrapper } from '../styles/Icon.module.css';
+import { contents, text, title } from '../styles/Index.module.css';
 
 export default function Home() {
+  const handleClick = () => Router.push("/exercise");
   return (
-    <div className={styles.container}>
-      :)
-    </div>
-  )
+    <PageTemplate>
+      <div className={contents}>
+        <div className={title}>手牌予測問題を解き、麻雀を効率的に学ぶ</div>
+        <div className={text}>
+          <p>
+            麻雀は隠れた情報を推測し、推測した情報を元に勝利を目指すゲームです。
+          </p>
+          <p>
+            麻雀をプレイする上で、最も重要な情報である「対局相手の手牌」を予測することができれば、放銃確率を最小化しながら自分のスコアを最大化することできます。
+          </p>
+          <p>
+            MahjongLでは、対局相手の手牌を予測するための訓練を簡単に行うことができます。
+            まずは以下のボタンから、
+            <S>3分で終わる簡単な練習問題を解いてみましょう</S>。
+          </p>
+        </div>
+        <Button type="primary" size="big" onClick={handleClick}>
+          <div className={leftBigWrapper}>
+            <FontAwesomeIcon icon={faPlay} />
+          </div>
+          問題を解く
+        </Button>
+      </div>
+    </PageTemplate>
+  );
 }

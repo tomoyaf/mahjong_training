@@ -1,0 +1,30 @@
+.innerWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  cursor: pointer;
+  user-select: none;
+  border-radius: inherit;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+}
+
+.primary {
+  color: rgb(255, 255, 255);
+  background: rgb(35, 45, 40);
+}
+
+.small {
+  font-size: 0.9rem;
+  padding: 0.6rem 1rem;
+}
+
+.medium {
+  font-size: 1rem;
+  padding: 0.8rem 1.2rem;
+}
+
+.big {
+  font-size: 1.1rem;
+  padding: 1rem 1.4rem;
+}
