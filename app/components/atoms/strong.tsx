@@ -1,7 +1,7 @@
 import React from 'react';
 
-import { strong } from '../../../styles/Strong.module.css';
+import { strongSpan } from '../../../styles/Strong.module.css';
 
 export default function Strong({ children }) {
-  return <span className={strong}>{children}</span>;
+  return <span className={strongSpan}>{children}</span>;
 }
