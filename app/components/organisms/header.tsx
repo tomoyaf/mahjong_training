@@ -1,13 +1,13 @@
 import Link from 'next/link';
 import React from 'react';
 
-import { header as headerStyle, icon } from '../../../styles/Header.module.css';
+import styles from '../../../styles/Header.module.css';
 
 export default function header() {
   return (
-    <div className={headerStyle}>
+    <div className={styles.header}>
       <Link href="/">
-        <a className={icon}>MahjongL</a>
+        <a className={styles.icon}>MahjongL</a>
       </Link>
     </div>
   );

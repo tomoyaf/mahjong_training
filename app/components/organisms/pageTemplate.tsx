@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { contentsWrapper, wrapper } from '../../../styles/PageTemplate.module.css';
+import styles from '../../../styles/PageTemplate.module.css';
 import Header from './header';
 
 export default function pageTemplate({ children }) {
   return (
-    <div className={wrapper}>
+    <div className={styles.wrapper}>
       <Header />
-      <div className={contentsWrapper}>{children}</div>
+      <div className={styles.contentsWrapper}>{children}</div>
     </div>
   );
 }

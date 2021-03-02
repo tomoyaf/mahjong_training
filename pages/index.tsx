@@ -6,16 +6,18 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Strong from '../app/components/atoms/strong';
 import Button from '../app/components/molecules/button';
 import PageTemplate from '../app/components/organisms/pageTemplate';
-import { leftBigWrapper } from '../styles/Icon.module.css';
-import { contents, text, title } from '../styles/Index.module.css';
+import iconStyles from '../styles/Icon.module.css';
+import indexStyles from '../styles/Index.module.css';
 
 export default function Home() {
   const handleClick = () => Router.push("/exercise");
   return (
     <PageTemplate>
-      <div className={contents}>
-        <div className={title}>手牌予測問題を解き、麻雀を効率的に学ぶ</div>
-        <div className={text}>
+      <div className={indexStyles.contents}>
+        <div className={indexStyles.title}>
+          手牌予測問題を解き、麻雀を効率的に学ぶ
+        </div>
+        <div className={indexStyles.text}>
           <p>
             麻雀は隠れた情報を推測し、推測した情報を元に勝利を目指すゲームです。
           </p>
@@ -29,7 +31,7 @@ export default function Home() {
           </p>
         </div>
         <Button type="primary" size="big" onClick={handleClick}>
-          <div className={leftBigWrapper}>
+          <div className={iconStyles.leftBigWrapper}>
             <FontAwesomeIcon icon={faPlay} />
           </div>
           問題を解く

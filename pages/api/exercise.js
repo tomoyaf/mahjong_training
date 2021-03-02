@@ -1,5 +1,86 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 
 export default (req, res) => {
-  res.status(200).json({ name: 'John Doe' })
-}
+  const paifu = {
+    discards: [
+      [
+        "1m",
+        "2m",
+        "3m",
+        "4m",
+        "5m",
+        "6m",
+        "7m",
+        "8m",
+        "9m",
+        "1p",
+        "2p",
+        "3p",
+        "4p",
+        "4p",
+      ],
+      [
+        "1m",
+        "2m",
+        "3m",
+        "4m",
+        "5m",
+        "6m",
+        "7m",
+        "8m",
+        "9m",
+        "1p",
+        "2p",
+        "3p",
+        "4p",
+        "4p",
+      ],
+      [
+        "1m",
+        "2m",
+        "3m",
+        "4m",
+        "5m",
+        "6m",
+        "7m",
+        "8m",
+        "9m",
+        "1p",
+        "2p",
+        "3p",
+        "4p",
+        "4p",
+      ],
+    ],
+    hands: [
+      "1m",
+      "2m",
+      "3m",
+      "4m",
+      "5m",
+      "6m",
+      "7m",
+      "8m",
+      "9m",
+      "1p",
+      "2p",
+      "3p",
+      "4p",
+      "4p",
+    ],
+  };
+  const exercise = { paifu, correct_answer: 0 };
+  const exercises = [
+    exercise,
+    exercise,
+    exercise,
+    exercise,
+    exercise,
+    exercise,
+    exercise,
+    exercise,
+    exercise,
+    exercise,
+  ];
+  res.status(200).json(exercises);
+};
