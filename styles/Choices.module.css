@@ -1,0 +1,53 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.choice {
+  padding: 1.6rem 0.8rem;
+  border-radius: 5px;
+  border: 1px solid rgb(230, 230, 230);
+  margin: 5px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.choice:hover {
+  background: rgb(247, 247, 247);
+}
+
+.selectedChoice {
+  padding: 1.6rem 0.8rem;
+  border-radius: 5px;
+  border: 1px solid rgb(230, 230, 230);
+  margin: 5px;
+  cursor: pointer;
+  user-select: none;
+
+  background: rgb(247, 247, 247);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+}
+
+.correctChoice {
+  padding: 1.6rem 0.8rem;
+  border-radius: 5px;
+  border: 1px solid rgb(230, 230, 230);
+  margin: 5px;
+  cursor: pointer;
+  user-select: none;
+
+  background: rgb(244, 250, 244);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+}
+
+.wrongChoice {
+  padding: 1.6rem 0.8rem;
+  border-radius: 5px;
+  border: 1px solid rgb(230, 230, 230);
+  margin: 5px;
+  cursor: pointer;
+  user-select: none;
+
+  background: rgb(250, 244, 244);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+}

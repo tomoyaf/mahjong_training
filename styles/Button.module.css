@@ -6,7 +6,8 @@
   cursor: pointer;
   user-select: none;
   border-radius: inherit;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.12);
+  font-weight: bold;
+  border: 1px solid rgb(230, 230, 230) !important;
 }
 
 .primary {
@@ -21,10 +22,18 @@
 
 .medium {
   font-size: 1rem;
-  padding: 0.8rem 1.2rem;
+  padding: 0.7rem 1.3rem;
 }
 
 .big {
   font-size: 1.1rem;
   padding: 1rem 1.4rem;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.disabledCard {
+  box-shadow: none !important;
 }

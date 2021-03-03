@@ -69,7 +69,44 @@ export default (req, res) => {
       "4p",
     ],
   };
-  const exercise = { paifu, correct_answer: 0 };
+  const exercise = {
+    paifu,
+    choices: [
+      [
+        "1m",
+        "2m",
+        "3m",
+        "4m",
+        "5m",
+        "6m",
+        "7m",
+        "8m",
+        "9m",
+        "1p",
+        "2p",
+        "3p",
+        "4p",
+        "4p",
+      ],
+      [
+        "1m",
+        "2m",
+        "3m",
+        "4m",
+        "5m",
+        "6m",
+        "7m",
+        "8m",
+        "9m",
+        "1p",
+        "2p",
+        "3p",
+        "4p",
+        "4p",
+      ],
+    ],
+    correct_answer: 0,
+  };
   const exercises = [
     exercise,
     exercise,
