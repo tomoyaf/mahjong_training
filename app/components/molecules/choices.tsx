@@ -7,7 +7,7 @@ export default function choices({
   selected,
   handleClick,
   correctAnswer,
-}) {
+}: any) {
   if (correctAnswer) {
     return (
       <div className={styles.wrapper}>
