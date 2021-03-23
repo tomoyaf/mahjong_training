@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { useRouter } from 'next/router';
 import React from 'react';
 
-import styles from '../../../styles/result.module.css';
+import styles from '../../../styles/Result.module.css';
 import Button from '../molecules/button';
 
 export default function result({ questions, answers }) {
