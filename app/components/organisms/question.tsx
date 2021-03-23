@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import styles from '../../../styles/question.module.css';
+import styles from '../../../styles/Question.module.css';
 import Button from '../molecules/button';
 import Choices from '../molecules/choices';
 import PaifuView from '../organisms/paifuView';
