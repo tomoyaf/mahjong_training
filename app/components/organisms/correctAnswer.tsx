@@ -3,7 +3,7 @@ import React from 'react';
 import styles from '../../../styles/correctAnswer.module.css';
 import Button from '../molecules/button';
 import Choices from '../molecules/choices';
-import PaifuView from '../organisms/PaifuView';
+import PaifuView from '../organisms/paifuView';
 
 export default function correctAnswer({
   questionIdx,
