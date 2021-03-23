@@ -3,6 +3,7 @@ import React from 'react';
 import styles from '../../../styles/correctAnswer.module.css';
 import Button from '../molecules/button';
 import Choices from '../molecules/choices';
+import PaifuView from '../organisms/PaifuView';
 
 export default function correctAnswer({
   questionIdx,
@@ -13,13 +14,20 @@ export default function correctAnswer({
 }) {
   const choiceTexts = question.choices.map((item) => item.join(" "));
   function handleClick() {}
+  const isCorrect = question.correct_answer === selected;
   return (
     <div className={styles.wrapper}>
       <div className={styles.title}>
-        解答　{questionIdx + 1} / {nQuestions}
-        {/* {selected} */}
+        解答　{questionIdx + 1} / {nQuestions}　
+        {isCorrect ? (
+          <div className={styles.correctTitle}>正解</div>
+        ) : (
+          <div className={styles.wrongTitle}>不正解</div>
+        )}
       </div>
-      <div className={styles.detail}>{question.paifu.discards[0]}</div>
+      <div className={styles.detail}>
+        <PaifuView paifu={question.paifu} />
+      </div>
       <div className={styles.choices}>
         <Choices
           texts={choiceTexts}

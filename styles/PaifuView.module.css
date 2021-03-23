@@ -1,0 +1,26 @@
+.innerWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 1rem;
+}
+
+.discards {
+  display: flex;
+  flex-direction: column;
+
+  margin: 0 0 1rem;
+}
+
+.hands {
+  display: flex;
+}
+
+.discard {
+  display: flex;
+  margin: 0;
+}
+
+.pai {
+  padding: 0;
+  display: flex;
+}

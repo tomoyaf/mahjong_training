@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import styles from '../../../styles/question.module.css';
 import Button from '../molecules/button';
 import Choices from '../molecules/choices';
+import PaifuView from '../organisms/paifuView';
 
 export default function question({
   questionIdx,
@@ -23,7 +24,9 @@ export default function question({
       <span className={styles.title}>
         問題　{questionIdx + 1} / {nQuestions}
       </span>
-      <div className={styles.detail}>{question.paifu.discards[0]}</div>
+      <div className={styles.detail}>
+        <PaifuView paifu={question.paifu} />
+      </div>
       <div className={styles.choices}>
         <Choices
           texts={choiceTexts}

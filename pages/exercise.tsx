@@ -17,9 +17,7 @@ export default function Exercise() {
 
   function handleQuestionNext(newAnswer: Number) {
     setState("correct_answer");
-    console.log(newAnswer);
     setAnswers((ans) => [...ans, newAnswer]);
-    console.log(answers);
   }
   function handleCorrectAnswerNext() {
     if (questionIdx + 1 < data.length) {

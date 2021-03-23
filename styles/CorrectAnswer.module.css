@@ -5,6 +5,7 @@
 .title {
   font-size: 1.2rem;
   margin: 0 0 1rem;
+  display: flex;
 }
 
 .detail {
@@ -13,4 +14,12 @@
 
 .nextButton {
   margin: 1rem 0 0;
+}
+
+.correctTitle {
+  color: rgb(233, 40, 40);
+}
+
+.wrongTitle {
+  color: rgb(80, 95, 230);
 }
