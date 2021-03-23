@@ -7,7 +7,7 @@ export default function header() {
   return (
     <div className={styles.header}>
       <Link href="/">
-        <a className={styles.icon}>MahjongL</a>
+        <a className={styles.icon}>🀄 MahjongL</a>
       </Link>
     </div>
   );

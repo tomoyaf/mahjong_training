@@ -9,6 +9,16 @@
   margin: 0 0 1rem;
 }
 
+.nCorrect {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
+.Result {
+  font-size: 1.2rem;
+  margin: 1rem 0;
+}
+
 .buttonWrapper {
 }
 
