@@ -12,7 +12,10 @@ export default function correctAnswer({
   handleNext,
   selected,
 }) {
-  const choiceTexts = question.choices.map((item) => item.join(" "));
+  const pos = ["下家", "対面", "上家"];
+  const choiceTexts = question.choices.map((item) =>
+    item.map((s, idx) => pos[idx] + "：" + s).join("　")
+  );
   function handleClick() {}
   const isCorrect = question.correct_answer === selected;
   return (
