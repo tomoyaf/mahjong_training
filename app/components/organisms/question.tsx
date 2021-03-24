@@ -11,7 +11,7 @@ export default function question({
   question,
   handleNext,
 }) {
-  const choiceTexts = question.choices.map((item) => item.join(" "));
+  const choiceTexts = question.choices.map((item) => item.join("　　"));
   const [selected, setSelected] = useState();
   function handleClick(idx) {
     setSelected(idx);
