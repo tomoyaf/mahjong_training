@@ -12,11 +12,11 @@ export default function PaifuView(props: {
         {props.paifu.discards.map((discard: any[], idx: string | number) => (
           <div className={styles.discard}>
             {(idx === 0 ? "捨て牌　" : "　　　　") + pos[idx]}：
-            {discard.join(" ")}
+            {discard.join(", ")}
           </div>
         ))}
       </div>
-      <div className={styles.hands}>手牌：{props.paifu.hands.join(" ")}</div>
+      <div className={styles.hands}>手牌：{props.paifu.hands.join(", ")}</div>
     </div>
   );
 }
