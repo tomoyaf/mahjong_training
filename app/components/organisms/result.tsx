@@ -44,7 +44,22 @@ MahjongL - 麻雀学習
       <div className={styles.title}>結果</div>
 
       <Card className={styles.table}>
-        <div className={styles.left}>
+        <div className={styles.row}>
+          <div className={styles.left}>正解数</div>
+          <div className={styles.right}>
+            {nCorrect} / {nQuestion}
+          </div>
+        </div>
+        <div className={styles.row}>
+          <div className={styles.left}>推定天鳳レート</div>
+          <div className={styles.right}>{estRate}</div>
+        </div>
+        <div className={styles.row}>
+          <div className={styles.left}>コメント</div>
+          <div className={styles.right}>{message}</div>
+        </div>
+
+        {/* <div className={styles.left}>
           <div className={styles.label}>正解数</div>
           <div className={styles.label}>推定天鳳レート</div>
           <div className={styles.label}>コメント</div>
@@ -55,7 +70,7 @@ MahjongL - 麻雀学習
           </div>
           <div className={styles.value}>{estRate}</div>
           <div className={styles.value}>{message}</div>
-        </div>
+        </div> */}
       </Card>
 
       <div className={styles.buttonWrapper}>
