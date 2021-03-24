@@ -13,7 +13,7 @@ export default function question({
 }) {
   const pos = ["下家", "対面", "上家"];
   const choiceTexts = question.choices.map((item) =>
-    item.map((s, idx) => pos[idx] + "：" + s).join("　")
+    item.map((s, idx) => pos[idx] + "：" + s.join(" ")).join("、")
   );
   const [selected, setSelected] = useState();
   function handleClick(idx) {

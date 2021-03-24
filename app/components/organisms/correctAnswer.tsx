@@ -14,7 +14,7 @@ export default function correctAnswer({
 }) {
   const pos = ["下家", "対面", "上家"];
   const choiceTexts = question.choices.map((item) =>
-    item.map((s, idx) => pos[idx] + "：" + s).join("　")
+    item.map((s, idx) => pos[idx] + "：" + s.join(" ")).join("、")
   );
   function handleClick() {}
   const isCorrect = question.correct_answer === selected;
