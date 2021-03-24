@@ -11,7 +11,8 @@ export default function PaifuView(props: {
       <div className={styles.discards}>
         {props.paifu.discards.map((discard: any[], idx: string | number) => (
           <div className={styles.discard}>
-            {pos[idx]}の捨て牌：{discard.join(" ")}
+            {(idx === 0 ? "捨て牌　" : "　　　　") + pos[idx]}：
+            {discard.join(" ")}
           </div>
         ))}
       </div>
