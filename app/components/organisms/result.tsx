@@ -5,7 +5,7 @@ import { LineIcon, LineShareButton, TwitterIcon, TwitterShareButton } from 'reac
 import useSwr from 'swr';
 
 import styles from '../../../styles/Result.module.css';
-import Card from '../atoms/Card';
+import Card from '../atoms/card';
 import Button from '../molecules/button';
 
 const fetcher = (url: RequestInfo) => fetch(url).then((res) => res.json());
