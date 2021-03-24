@@ -24,6 +24,24 @@
   margin: 0 0 2.8rem 0;
 }
 
+.exerciseButton {
+  margin: 0 0 4rem;
+}
+
+.shareButton {
+  margin: 0.3rem 2.4rem 2rem 2.4rem;
+}
+
+.shareButtonWrapper {
+  margin: 1rem 0 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  width: 58rem;
+  flex-wrap: wrap;
+}
+
 @media screen and (max-width: 480px) {
   .contents {
     display: flex;
@@ -47,5 +65,8 @@
     color: rgb(90, 100, 95);
     line-height: 2.6rem;
     margin: 0 0 2.8rem 0;
+  }
+  .shareButton {
+    margin: 0.3rem 1.2rem 2rem 1.2rem;
   }
 }

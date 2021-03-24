@@ -1,4 +1,9 @@
 import Router from 'next/router';
+import {
+    FacebookIcon, FacebookShareButton, HatenaIcon, HatenaShareButton, LineIcon, LineShareButton,
+    RedditIcon, RedditShareButton, TwitterIcon, TwitterShareButton, WhatsappIcon,
+    WhatsappShareButton
+} from 'react-share';
 
 import { faPlay } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -11,6 +16,10 @@ import indexStyles from '../styles/Index.module.css';
 
 export default function Home() {
   const handleClick = () => Router.push("/exercise");
+
+  const url = "https://mahjongl.vercel.app";
+  const iconSize = 72;
+  const title = "MahjongL - 麻雀学習";
   return (
     <PageTemplate>
       <div className={indexStyles.contents}>
@@ -32,12 +41,44 @@ export default function Home() {
             <Strong>3分で終わる簡単な練習問題を解いてみましょう</Strong>。
           </p>
         </div>
-        <Button type="primary" size="big" onClick={handleClick}>
-          <div className={iconStyles.leftBigWrapper}>
-            <FontAwesomeIcon icon={faPlay} />
-          </div>
-          問題を解く
-        </Button>
+        <div className={indexStyles.exerciseButton}>
+          <Button type="primary" size="big" onClick={handleClick}>
+            <div className={iconStyles.leftBigWrapper}>
+              <FontAwesomeIcon icon={faPlay} />
+            </div>
+            問題を解く
+          </Button>
+        </div>
+
+        <div className={indexStyles.title}>SNSでMahjongLを共有</div>
+        <div className={indexStyles.shareButtonWrapper}>
+          <TwitterShareButton
+            url={url}
+            title={title}
+            className={indexStyles.shareButton}
+          >
+            <TwitterIcon size={iconSize} round />
+          </TwitterShareButton>
+          <HatenaShareButton url={url} className={indexStyles.shareButton}>
+            <HatenaIcon size={iconSize} round />
+          </HatenaShareButton>
+          <LineShareButton
+            url={url}
+            title={title}
+            className={indexStyles.shareButton}
+          >
+            <LineIcon size={iconSize} round />
+          </LineShareButton>
+          <RedditShareButton url={url} className={indexStyles.shareButton}>
+            <RedditIcon size={iconSize} round />
+          </RedditShareButton>{" "}
+          <FacebookShareButton url={url} className={indexStyles.shareButton}>
+            <FacebookIcon size={iconSize} round />
+          </FacebookShareButton>
+          <WhatsappShareButton url={url} className={indexStyles.shareButton}>
+            <WhatsappIcon size={iconSize} round />
+          </WhatsappShareButton>
+        </div>
       </div>
     </PageTemplate>
   );
